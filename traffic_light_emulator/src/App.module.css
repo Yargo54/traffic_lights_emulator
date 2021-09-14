@@ -1,5 +1,7 @@
 .main{
     background-color: wheat;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .frame{
@@ -7,6 +9,34 @@
     border: 2px solid rgb(0, 0, 0);
     width: 110px;
     margin: 0 auto;
+    grid-column-start: 2;
+}
+
+.number{
+    color: cyan;
+    width: 30px;
+    height: 40px;
+    text-align: center;
+    font-size: 25px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border: 2px solid cyan;
+}
+
+.button{
+    justify-self: center;
+    align-self: center;
+    margin: 5px;
+    grid-row-start: 2;
+}
+
+.button_switch_off{
+    justify-self: center;
+    align-self: center;
+    margin: 5px;
+    font-size: 15px;
+    color: red;
+    grid-column-start: 2;
 }
 
 /* //////////////////////////////////// */
@@ -18,8 +48,24 @@
     border: 2px solid rgb(0, 215, 0);
     background-color: rgb(0, 215, 0);
     margin: 0 auto;
-    
 }
+
+.green_switched_blinck{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 2px solid rgb(0, 215, 0);
+    background-color: rgb(0, 215, 0);
+    margin: 0 auto;
+
+    animation: blink_green 1s;
+    animation-iteration-count: 3;
+}
+
+@keyframes blink_green { 50% { 
+    background-color: rgba(0, 215, 0, 0.5);
+    border: 2px solid rgba(0, 215, 0, 0);
+}}
 
 .yellow_switched_on{
     width: 100px;
@@ -30,6 +76,23 @@
     margin: 0 auto;
 }
 
+.yellow_switched_blinck{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 2px solid rgb(255, 255, 0);
+    background-color: rgb(255, 255, 0);
+    margin: 0 auto;
+
+    animation: blink_yellow 1s;
+    animation-iteration-count: 3;
+}
+
+@keyframes blink_yellow { 50% { 
+    background-color: rgba(255, 255, 0, 0.5);
+    border: 2px solid rgba(255, 255, 0, 0);
+}}
+
 .red_switched_on{
     width: 100px;
     height: 100px;
@@ -39,6 +102,23 @@
     margin: 0 auto;
     
 }
+
+.red_switched_blinck{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 2px solid rgb(255, 0, 0);
+    background-color: rgb(255, 0, 0);
+    margin: 0 auto;
+    
+    animation: blink_red 1s;
+    animation-iteration-count: 3;
+}
+
+@keyframes blink_red { 50% { 
+    background-color: rgba(255, 0, 0, 0.5); 
+    border: 2px solid rgba(255, 0, 0, 0) 
+}}
 
 /* //////////////////////////////////// */
 
