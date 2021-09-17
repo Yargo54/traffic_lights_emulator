@@ -1,0 +1,172 @@
+.main{
+    min-width: 320px;
+    max-width: 479px;
+    width: calc(100% - 20px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    margin-top: calc(100% - 75%)
+}
+
+.frame{
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    margin-top: 10px;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    justify-self: center;
+}
+
+.number{
+    color: cyan;
+    width: 30px;
+    height: 40px;
+    text-align: center;
+    font-size: 30px;
+    margin: 10px auto;
+    margin-bottom: 10px;
+    border: 2px solid cyan;
+    padding: 5px;
+}
+
+.button{
+    justify-self: center;
+    align-self: center;
+    margin: 10px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.button_navigation_green{
+    background-color: rgb(0, 215, 0);
+}
+
+.button_navigation_yellow{
+    background-color: rgb(255, 255, 0);
+}
+
+.button_navigation_red{
+    background-color: rgb(255, 0, 0);
+}
+
+.button_switch_off{
+    background-color: gray;
+}
+
+.signal{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin: 5px 10px;
+}
+
+.signal_green_on{
+    border: 2px solid rgb(0, 215, 0);
+    background-color: rgb(0, 215, 0);
+}
+
+.signal_green_off{
+    border: 2px solid rgba(0, 215, 0, 0);
+    background-color: rgba(0, 215, 0, 0.5);
+}
+
+.signal_yellow_on{
+    border: 2px solid rgb(255, 255, 0);
+    background-color: rgb(255, 255, 0);
+}
+
+.signal_yellow_off{
+    border: 2px solid rgba(255, 255, 0, 0);
+    background-color: rgba(255, 255, 0, 0.5);
+}
+
+.signal_red_on{
+    border: 2px solid rgb(255, 0, 0);
+    background-color: rgb(255, 0, 0);
+}
+
+.signal_red_off{
+    border: 2px solid rgba(255, 0, 0, 0);
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.signal_green_blinck{
+    animation: blink_green 1s;
+    animation-iteration-count: 3;
+}
+@keyframes blink_green { 50% { 
+    background-color: rgba(0, 215, 0, 0.5);
+    border: 2px solid rgba(0, 215, 0, 0);
+}}
+
+.signal_yellow_blinck{
+    animation: blink_yellow 1s;
+    animation-iteration-count: 3;
+}
+@keyframes blink_yellow { 50% { 
+    background-color: rgba(255, 255, 0, 0.5);
+    border: 2px solid rgba(255, 255, 0, 0);
+}}
+
+.signal_red_blinck{
+    animation: blink_red 1s;
+    animation-iteration-count: 3;
+}
+@keyframes blink_red { 50% { 
+    background-color: rgba(255, 0, 0, 0.5); 
+    border: 2px solid rgba(255, 0, 0, 0) 
+}}
+
+@media screen and (min-width: 480px) and (max-width: 768px){
+    .main{
+        min-width: 479px;
+        max-width: 768px;
+        margin-top: calc(100% - 90%)
+    }
+
+    .signal{
+        width: 110px;
+        margin: 5px 20px;
+    }
+
+    .button{
+        justify-self: end;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .main{
+        min-width: 767px;
+        max-width: 991px;
+        margin-top: calc(100% - 93%)
+    }
+
+    .frame{
+        justify-self: start;
+        margin-left: 40px;
+    }
+
+    .button{
+        justify-self: end;
+    }
+}
+
+@media screen and (min-width: 991px) {
+    .main{
+        min-width: 992px;
+        margin-top: calc(100% - 90%)
+    }
+
+    .frame{
+        justify-self: start;
+        margin-left: 40px;
+    }
+
+    .button{
+        justify-self: end;
+    }
+}
