@@ -14,7 +14,7 @@ const Navbar = function( { countdown, history } ) {
                 Выключить
             </button>
             <button 
-                className={`${style.button} ${style.button_navigation} ${style.button_navigation_green}`} 
+                className={`${style.button} ${style.button_navigation_green}`} 
                 onClick={()=> {
                     history.push('/green');
                     countdown()}
@@ -23,7 +23,7 @@ const Navbar = function( { countdown, history } ) {
                 Включить зелёный
             </button>
             <button 
-                className={`${style.button} ${style.button_navigation} ${style.button_navigation_yellow}`} 
+                className={`${style.button} ${style.button_navigation_yellow}`} 
                 onClick={()=> {
                     history.push('/yellow');
                     countdown()}
@@ -32,7 +32,7 @@ const Navbar = function( { countdown, history } ) {
                 Включить жёлтый
             </button>
             <button 
-                className={`${style.button} ${style.button_navigation} ${style.button_navigation_red}`} 
+                className={`${style.button} ${style.button_navigation_red}`} 
                 onClick={()=> {
                     history.push('/red');
                     countdown()}

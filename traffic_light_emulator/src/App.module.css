@@ -1,14 +1,21 @@
 .main{
+    min-width: 320px;
+    max-width: 479px;
+    width: calc(100% - 20px);
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    margin-top: calc(100% - 75%)
 }
 
 .frame{
     background-color: rgb(0, 0, 0);
     border: 2px solid rgb(0, 0, 0);
-    width: 135px;
-    margin: 10px auto;
+    margin-top: 10px;
     grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    justify-self: center;
 }
 
 .number{
@@ -16,25 +23,22 @@
     width: 30px;
     height: 40px;
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
     margin: 10px auto;
     margin-bottom: 10px;
     border: 2px solid cyan;
+    padding: 5px;
 }
 
 .button{
     justify-self: center;
     align-self: center;
     margin: 10px;
-    font-size: 15px;
+    font-size: 20px;
     border: none;
     outline: none;
     border-radius: 5px;
-    padding: 5px;
-}
-
-.button_navigation{
-    grid-row-start: 2;
+    padding: 15px;
 }
 
 .button_navigation_green{
@@ -50,16 +54,14 @@
 }
 
 .button_switch_off{
-    color: red;
     background-color: gray;
-    grid-column-start: 2;
 }
 
 .signal{
     width: 100px;
     height: 100px;
     border-radius: 100%;
-    margin: 15px auto;
+    margin: 5px 10px;
 }
 
 .signal_green_on{
@@ -118,3 +120,53 @@
     background-color: rgba(255, 0, 0, 0.5); 
     border: 2px solid rgba(255, 0, 0, 0) 
 }}
+
+@media screen and (min-width: 480px) and (max-width: 768px){
+    .main{
+        min-width: 479px;
+        max-width: 768px;
+        margin-top: calc(100% - 90%)
+    }
+
+    .signal{
+        width: 110px;
+        margin: 5px 20px;
+    }
+
+    .button{
+        justify-self: end;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .main{
+        min-width: 767px;
+        max-width: 991px;
+        margin-top: calc(100% - 93%)
+    }
+
+    .frame{
+        justify-self: start;
+        margin-left: 40px;
+    }
+
+    .button{
+        justify-self: end;
+    }
+}
+
+@media screen and (min-width: 991px) {
+    .main{
+        min-width: 992px;
+        margin-top: calc(100% - 90%)
+    }
+
+    .frame{
+        justify-self: start;
+        margin-left: 40px;
+    }
+
+    .button{
+        justify-self: end;
+    }
+}
