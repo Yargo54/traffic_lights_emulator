@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "//traffic_lights_emulator/static/css/main.d90b42e9.chunk.css",
+    "main.js": "//traffic_lights_emulator/static/js/main.5322bed2.chunk.js",
+    "main.js.map": "//traffic_lights_emulator/static/js/main.5322bed2.chunk.js.map",
+    "runtime-main.js": "//traffic_lights_emulator/static/js/runtime-main.7bfd197f.js",
+    "runtime-main.js.map": "//traffic_lights_emulator/static/js/runtime-main.7bfd197f.js.map",
+    "static/js/2.bdeeda9b.chunk.js": "//traffic_lights_emulator/static/js/2.bdeeda9b.chunk.js",
+    "static/js/2.bdeeda9b.chunk.js.map": "//traffic_lights_emulator/static/js/2.bdeeda9b.chunk.js.map",
+    "index.html": "//traffic_lights_emulator/index.html",
+    "static/css/main.d90b42e9.chunk.css.map": "//traffic_lights_emulator/static/css/main.d90b42e9.chunk.css.map",
+    "static/js/2.bdeeda9b.chunk.js.LICENSE.txt": "//traffic_lights_emulator/static/js/2.bdeeda9b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7bfd197f.js",
+    "static/js/2.bdeeda9b.chunk.js",
+    "static/css/main.d90b42e9.chunk.css",
+    "static/js/main.5322bed2.chunk.js"
+  ]
+}
